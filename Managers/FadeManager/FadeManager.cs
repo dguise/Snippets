@@ -5,9 +5,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class FadeManager : MonoBehaviour
+public class FadeManager : Singleton<FadeManager>
 {
-    public static FadeManager Instance;
     Image fadeImage;
     private Color invisible = new Color(0, 0, 0, 0);
     private Color visible = new Color(0, 0, 0, 1);
@@ -21,26 +20,12 @@ public class FadeManager : MonoBehaviour
         transform.GetChild(0).gameObject.SetActive(false);
     }
 
-    void Awake()
+    void Start() 
     {
         // For easier development
         transform.GetChild(0).gameObject.SetActive(true);
 
-        if (Instance != null)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-
         fadeImage = GetComponentInChildren<Image>();
-    }
-
-    void Start() 
-    {
         FadeIn();
         SceneManager.activeSceneChanged += OnActiveSceneChanged;
     }
