@@ -16,16 +16,25 @@ The Snippets should, preferably, be...
 ## How do I add a Snippet
 
 1. Clone this repository
+
 `git clone https://github.com/dguise/Snippts.git`
 
-2. Add a folder with a descreptive name to the root
+2. Create a branch for your Snippet
+
+`git checkout -b <author>/<snippet-name>`
+
+3. Add a folder with a descreptive name to the root
+
 `/CoolThing/`
 
-3. Add your necessary files/subfolders to your directory
+4. Add your necessary files/subfolders to your directory
+
 `/CoolThing/DoCoolThing.cs`
 `/CoolThing/readme.md`
 
-4. Commit & push
+5. Commit & push
 - `git add .`
 - `git commit -m "Add CoolThing"`
 - `git push`
+
+6. Open a [Pull Request](https://github.com/dguise/Snippets/pulls)
