@@ -28,9 +28,8 @@ The Snippets should, preferably, be...
 `/CoolThing/`
 
 4. Add your necessary files/subfolders to your directory
-
-`/CoolThing/DoCoolThing.cs`
-`/CoolThing/readme.md`
+- `/CoolThing/DoCoolThing.cs`
+- `/CoolThing/readme.md`
 
 5. Commit & push
 - `git add .`
