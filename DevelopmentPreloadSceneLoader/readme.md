@@ -1,5 +1,5 @@
 ## Description
-The [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)] is an attribute that makes sure this method when the game starts. 
+The `[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]` is an attribute that makes sure this method when the game starts. 
 Here we use it to start the preload scene.
 
 ## Prerequisites
